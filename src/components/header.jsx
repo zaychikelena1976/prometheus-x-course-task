@@ -1,7 +1,7 @@
 import "./header.css";
 import avatar from "./avatar.png";
 import basket from "./basket.svg";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink} from "react-router-dom";
 import useUser from "../hooks";
 
 export default function Header({ user, setUser }) {
@@ -14,14 +14,14 @@ export default function Header({ user, setUser }) {
           <a
             className="navbar-brand"
             aria-current="page"
-            href="https://courses.prometheus.org.ua/"
+            href="https://zaychikelena1976.github.io/prometheus-x-course-task/public"
           >
             <b>JS BAND STORY/Olena Lomonos</b>
           </a>
 
           {/* <div className="nav navbar-nav navbar-right"> */}
 
-          {user != {} ? (
+          {user !== {} ? (
             <div className="collapse navbar-collapse " id="navbarNavAltMarkup">
               <div className="nav navbar-nav navbar-right">
                 <NavLink to="/cart" className={setActiv}>
