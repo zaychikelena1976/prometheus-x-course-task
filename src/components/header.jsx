@@ -1,7 +1,7 @@
 import "./header.css";
 import avatar from "./avatar.png";
 import basket from "./basket.svg";
-import { NavLink} from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import useUser from "../hooks";
 
 export default function Header({ user, setUser }) {
@@ -14,7 +14,7 @@ export default function Header({ user, setUser }) {
           <a
             className="navbar-brand"
             aria-current="page"
-            href="https://zaychikelena1976.github.io/prometheus-x-course-task/public"
+            href="https://zaychikelena1976.github.io/prometheus-x-course-task"
           >
             <b>JS BAND STORY/Olena Lomonos</b>
           </a>
