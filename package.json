@@ -2,6 +2,7 @@
   "name": "x-course_task",
   "homepage":"https://zaychikelena1976.github.io/prometheus-x-course-task/",
   "version": "0.1.0",
+  "main": "index.js",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
