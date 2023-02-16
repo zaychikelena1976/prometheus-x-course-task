@@ -1,0 +1,12 @@
+img.notFound {
+    height: 78vh;
+    display: flex;
+    justify-content: center;
+    /* background-image: url('./imageNotFound.png');     */
+    background-repeat: no-repeat;
+    background-size: contain;
+   
+    
+  }
+  
+  
