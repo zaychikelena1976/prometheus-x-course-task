@@ -3,7 +3,7 @@ div.wrapper{
     display: flex;
     justify-content: center;    
      background-color: #1f1f1f; 
-    background-image: url('./cartEmpty.jpg');    
+    background-image: url('./cart.jpg');    
     background-repeat: no-repeat;
     background-size: contain;
    
