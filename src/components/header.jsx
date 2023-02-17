@@ -31,13 +31,14 @@ export default function Header({ user, setUser }) {
                   <button
                     className="btn-dark btn-sm rounded-3 hidden"
                     type="button"
-                    // onClick={() => (user = {})}
-                  >
-                    {/* {()=>{localStorage.clear()}} */} Sign-Out
+                    onClick={() => {
+                      localStorage.removeItem("user");
+                    }}>
+                  Sign-Out
                   </button>
                 </NavLink>
                 <img src={avatar} alt="customer" width="40" height="40" />
-                <span>User</span>
+                <span>{`hello, ${user}`}</span>
               </div>
             </div>
           ) : (
