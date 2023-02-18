@@ -20,7 +20,7 @@ export default function BooksList({ setBooks, onClick }) {
 // BooksList.propTypes = {
 //   books: PropTypes.arrayOf(
 //     PropTypes.shape({
-//       _id: PropTypes.string.isRequired,
+//       id: PropTypes.string.isRequired,
 //     })
 //   ),
 //   onClick: PropTypes.func.isRequired,
