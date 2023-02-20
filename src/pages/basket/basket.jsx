@@ -9,12 +9,7 @@ export default function Basket() {
           <div className="col-xs-5 col-md-5 col-sm-5 "></div>
           <div className="col-xs-5 col-md-5 col-sm-5 "></div>
           <div className="col-xs-2 col-md-2 col-sm-2 border-2 text-end">
-            {/* <button
-              className="btn-sm btn-warning border rounded text-primary"
-              type="button"
-            >
-              Purchase
-            </button> */}
+            
           </div>
           <div className="col-xs-4 col-md-4 col-sm-4"></div>
           <div className="col-xs-4 col-md-4 col-sm-4">

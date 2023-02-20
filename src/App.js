@@ -1,10 +1,10 @@
 import { React, useEffect, useState } from "react";
-import { ToastContainer, toast } from "react-toastify";
+import {  toast } from "react-toastify";
 import { Routes, Route } from "react-router-dom";
 import ContainerLayout from "./pages/containerLayout";
 import { default as db } from "./db/books.json";
 import UserBar from "./pages/signin/signin";
-import { BooksProvider, CartProvider, UserProvider } from "./hooks";
+import { BooksProvider, CartProvider} from "./hooks";
 import {  
   SpecificBook,
   BookList,
@@ -13,8 +13,7 @@ import {
   NotFoundView,
 } from "./pages";
 import {  Header, Footer, CartBar } from "./components";
-import SelectedBook from "./components/SelectedBook";
-import CartList from './components/CartList';
+
 
 export default function App() {
   const dataBooks = db.books;
