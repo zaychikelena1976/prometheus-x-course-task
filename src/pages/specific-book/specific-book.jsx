@@ -1,5 +1,5 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useBooks } from "../../hooks/useBooks";
 import { default as db } from "../../db/books.json";
 import Button from "../../components/button";
@@ -7,7 +7,7 @@ import BookBlank from "../../components/bookBlank";
 import CountForm from "../../components/countform";
 import BookImage from "../../components/bookImage";
 import BookDescription from "../../components/bookDescription";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 
 export default function SpecificBook({ bookId, addToCart }) {
   const [book, setBook] = useState({});
@@ -19,7 +19,7 @@ export default function SpecificBook({ bookId, addToCart }) {
   const { id, author, price, image, title } = Book;
   const [count, setCount] = useState({});
   Book.count = dataBooks.count;
-  
+
   function handleChange(event) {
     if (event.target.value > 0 && event.target.value <= 42) {
       setCount(Number(event.target.value));
@@ -58,7 +58,7 @@ export default function SpecificBook({ bookId, addToCart }) {
               <Button
                 type="button"
                 title="Signing out of your account"
-                onClick={() =>setCart({Book})}
+                onClick={() => setCart({ Book })}
                 // onChange={(e) =>  addToCart({ ...book, count: Number(count) })}
                 //  addToCart({ ...book, count: Number(count) })}
               >

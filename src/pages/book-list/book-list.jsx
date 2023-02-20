@@ -50,13 +50,6 @@ export default function BookList({ setBooks, onClick, book, bookId }) {
             <option>6.99</option>
           </select>
         </div>
-        <div className="col-xs-12 col-md-3 col-sm-12 bg-info">
-          <form>
-            <button type="button" title="Reset all filters">
-              Reset filters
-            </button>
-          </form>
-        </div>
       </div>
 
       <BooksList onClick={onClick} />
